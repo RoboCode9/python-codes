@@ -102,6 +102,8 @@ def main():
             """
         )
 
+        choice = input("Choice: ")
+
         if choice == "0":
             print("Good bye")
         elif choice == "1":
