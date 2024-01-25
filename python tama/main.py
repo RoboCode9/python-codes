@@ -55,7 +55,7 @@ class Pet (object):
 
     def feed(self):
         print("***munch*** \n yum!")
-        meal = randrange(self.food, self.full_max)
+        meal = randrange(self.food, self.food_max)
         self.food += meal
 
         if self.food < 0:
