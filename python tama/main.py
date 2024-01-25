@@ -100,6 +100,7 @@ def main():
 
         if choice == "0":
             print("Good bye")
+            break
         elif choice == "1":
             your_pet.feed()
         elif choice == "2":
