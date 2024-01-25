@@ -55,7 +55,7 @@ class Pet (object):
         if self.food < 0:
             self.food = 0
             print("I still need food!")
-        elif self.food > self.food_max:
+        elif self.food >= self.food_max:
             self.food = self.food_max
             print("I'm full.")
         self.__clock_tick()
@@ -67,7 +67,7 @@ class Pet (object):
         if self.excitement < 0:
             self.excitement = 0
             print("Bored...")
-        elif self.excitement > self.excitement_max:
+        elif self.excitement >= self.excitement_max:
             self.excitement = self.excitement_max
             print("I am very happy")
         self.__clock_tick
