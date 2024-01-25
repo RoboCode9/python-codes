@@ -101,3 +101,20 @@ def main():
             0 - Quit
             """
         )
+
+        if choice == "0":
+            print("Good bye")
+        elif choice == "1":
+            your_pet.feed()
+        elif choice == "2":
+            your_pet.talk()
+        elif choice == "3":
+            new_word = input("What word or sentence do you want to teach? ")
+            your_pet.teach(new_word)
+        elif choice == "4":
+            your_pet.play()
+        else:
+            print("Not a valid option")
+
+main()
+        
