@@ -69,7 +69,7 @@ class Pet (object):
             print("Bored...")
         elif self.excitement > self.excitement_max:
             self.excitement = self.excitement_max
-            print("I am happy")
+            print("I am very happy")
         self.__clock_tick
 
 def main():
