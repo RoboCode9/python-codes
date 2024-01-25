@@ -27,4 +27,8 @@ class Pet (object):
     def mood(self):
         if self.food > self.food_warning and self.excitement > self.excitement_warning:
             return "happy"
+        elif self.food < self.food_warning:
+            return "hungry"
+        else:
+            return "bored"
         
