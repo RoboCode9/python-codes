@@ -19,7 +19,7 @@ class Pet (object):
         self.excitement = randrange(self.excitement_max)
         self.vocab = self.vocab[:]
 
-    def __clock__tick(self):
+    def __clock_tick(self):
         self.excitement -= 1
         self.food -= 1
 
@@ -34,3 +34,21 @@ class Pet (object):
         
     def __str__(self):
         return "\nI'm" + self.name + "\nI feel " + self.mood() + "."
+    
+    def teach(self, word):
+        self.vocab.append(word)
+        self.__clock_tick()
+
+    def talk(self):
+        print(
+            "I am a ",
+            self.animal_type,
+            " named "
+            self.name,
+            ".",
+            "I feel ",
+            self.mood(),
+            
+
+
+        )
