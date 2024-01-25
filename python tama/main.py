@@ -43,7 +43,7 @@ class Pet (object):
         print(
             "I am a ",
             self.animal_type,
-            " named "
+            " named ",
             self.name,
             ".",
             "I feel ",
