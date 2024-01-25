@@ -77,3 +77,27 @@ class Pet (object):
             self.excitement = self.excitement_max
             print("I am happy")
         self.__clock_tick
+
+def main():
+    pet_name = input("Name your pet ")
+    pet_type = input("what type of animal is your pet? ")
+
+    #create a new pet
+    your_pet = Pet(pet_name, pet_type)
+
+    input("Hello I am " + your_pet.name + " and I am new here!" + "\nPress enter to start.")
+
+    choice = None
+
+    while choice != 0:
+        print(
+            """
+            ***Menu***
+
+            1 - Feed pet
+            2 - Talk to pet
+            3 - Teach new word to pet
+            4 - Entertain pet
+            0 - Quit
+            """
+        )
