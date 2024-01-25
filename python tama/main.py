@@ -48,7 +48,7 @@ class Pet (object):
             ".",
             "I feel ",
             self.mood(),
-            
-
-
+            " now.\n"
         )
+
+        
