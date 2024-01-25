@@ -51,4 +51,29 @@ class Pet (object):
             " now.\n"
         )
 
-        
+        self.__clock_tick()
+
+    def feed(self):
+        print("***munch*** \n yum!")
+        meal = randrange(self.food, self.full_max)
+        self.food += meal
+
+        if self.food < 0:
+            self.food = 0
+            print("I still need food!")
+        elif self.food > self.food_max:
+            self.food = self.food_max
+            print("I'm full.")
+        self.__clock_tick()
+
+    def play(self):
+        print("Yes!")
+        fun = randrange(self.excitement, self.excitement_max)
+        self.excitement += fun
+        if self.excitement < 0:
+            self.excitement = 0
+            print("Bored...")
+        elif self.excitement > self.excitement_max:
+            self.excitement = self.excitement_max
+            print("I am happy")
+        self.__clock_tick
