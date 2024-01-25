@@ -32,3 +32,5 @@ class Pet (object):
         else:
             return "bored"
         
+    def __str__(self):
+        return "\nI'm" + self.name + "\nI feel " + self.mood() + "."
