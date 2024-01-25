@@ -49,7 +49,7 @@ class Pet (object):
 
     def feed(self):
         print("***munch*** \n yum!")
-        meal = randrange(self.food, self.food_max)
+        meal = randrange(0, self.food_max)
         self.food += meal
 
         if self.food < 0:
@@ -62,7 +62,7 @@ class Pet (object):
 
     def play(self):
         print("Yes!")
-        fun = randrange(self.excitement, self.excitement_max)
+        fun = randrange(0, self.excitement_max)
         self.excitement += fun
         if self.excitement < 0:
             self.excitement = 0
