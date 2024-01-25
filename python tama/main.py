@@ -23,7 +23,6 @@ class Pet (object):
         self.excitement -= 1
         self.food -= 1
 
-    @property
     def mood(self):
         if self.food > self.food_warning and self.excitement > self.excitement_warning:
             return "happy"
@@ -41,15 +40,8 @@ class Pet (object):
 
     def talk(self):
         print(
-            "I am a ",
-            self.animal_type,
-            " named ",
-            self.name,
-            ".",
-            "I feel ",
-            self.mood(),
-            " now.\n"
-        )
+            "I am a ", self.animal_type, " named ", self.name, ".",
+            "I feel ", self.mood(), " now.\n")
 
         self.__clock_tick()
 
