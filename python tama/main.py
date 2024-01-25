@@ -42,6 +42,8 @@ class Pet (object):
         print(
             "I am a ", self.animal_type, " named ", self.name, ".",
             "I feel ", self.mood(), " now.\n")
+        
+        print(self.vocab[randrange(len(self.vocab))])
 
         self.__clock_tick()
 
