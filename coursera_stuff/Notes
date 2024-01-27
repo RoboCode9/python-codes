@@ -1,0 +1,2 @@
+x.shapes # this describes the amount of rows and columns of a data set displays like this (rows, columns)
+x.columns # displays all columns names for the data set
