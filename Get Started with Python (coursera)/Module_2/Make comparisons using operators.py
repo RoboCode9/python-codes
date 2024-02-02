@@ -1,0 +1,7 @@
+print(10>1)
+print('cat' == 'dog')
+print(1 != 2)
+print("")
+print("Yellow" > "Cyan" and "Brown" > "Magenta")
+print(20 > 50 or 1 != 2)
+print(not 42 == "Answer")
