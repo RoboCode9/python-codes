@@ -6,7 +6,8 @@ color = ['Red', 'Red', 'Red', 'Blue'] # create a list of colors.
 random.shuffle(color)
 
 while True:
-    selection = input('Would you like to run this weekly randomizer activity program? (yes or no) ')
+    selection = (input('Would you like to run this weekly randomizer activity program? (yes or no) '))
+    selection = selection.lower()
 
     if selection == 'yes':
         for i in range(5): #iterate over a range of 7
