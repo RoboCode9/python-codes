@@ -20,3 +20,5 @@ print("") #print blank line for better view
 
 for day, task in zip(days_of_week, activity): #iterate over both day_of_week and activity lists, if i only used "task" it would look like this: ('sunday', 'jump') etc.
     print(f'This {day} you will: {task}')
+
+input("Press any key to continue...")
