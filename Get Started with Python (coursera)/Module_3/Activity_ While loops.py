@@ -191,7 +191,7 @@ while n >= 0:
 # 
 # **Note that there is more than one way to solve this problem.**
 
-# In[20]:
+# In[22]:
 
 
 from time import sleep
@@ -201,18 +201,21 @@ mins = 10
 
 while mins >= 0:
     if mins != 5 and mins != 2 and mins != 0:
-        print(f'{mins} hey')
+        print(f'{mins}')
+        sleep(1)
         mins -= 1
     elif mins == 5:
         print(f'Place your reservation soon! {mins} minutes remaining.')
+        sleep(1)
         mins -= 1
     elif mins == 2:
         print(f'Don\'t lose your seats! {mins} minutes remaining.')
+        sleep(1)
         mins -= 1
     else:
         print('User timed out.')
+        sleep(1) #edited
         mins -= 1
-
 
 # <details><summary><h4><strong>Hint 1</strong></h4></summary>
 # 
