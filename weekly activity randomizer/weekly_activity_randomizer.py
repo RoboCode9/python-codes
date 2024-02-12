@@ -1,7 +1,6 @@
 import random
 
 days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday",] #create list of days
-activity = [] #for activities
 color = ['Red', 'Red', 'Red', 'Blue'] # create a list of colors.
 random.shuffle(color)
 
@@ -10,6 +9,7 @@ while True:
     selection = selection.lower()
 
     if selection == 'yes':
+        activity = [] #for activities
         for i in range(5): #iterate over a range of 7
             task = input(f'Enter activity #{i + 1}: ') #gather user input then add it to task variable
             activity.append(task) #append it to activity list
