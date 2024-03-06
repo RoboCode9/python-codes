@@ -10,7 +10,7 @@ while True:
 
     if selection == 'yes':
         activity = [] #for activities
-        for i in range(5): #iterate over a range of 7
+        for i in range(5): #iterate over a range of 5
             task = input(f'Enter activity #{i + 1}: ') #gather user input then add it to task variable
             activity.append(task) #append it to activity list
 
